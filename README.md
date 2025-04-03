@@ -7,7 +7,7 @@ For this exercise I have created a single page application using ASP.NET core MV
 
 1. Open in Visual Studio 2022, then build and run the app.
 
-Please note - I would have added the filers as requested but I have already spent more time than the suggested 90 minutes so I am going to stop.
+Please note - I would have added the filters as requested but I have already spent more time than the suggested 90 minutes so I am going to stop.
 
 Thanks for the opportunity.
 
