@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model RestaurantViewModel
+
+<div row id="saveContainer">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="radios">
+        <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="notfav" autocomplete="off"> Cancel/Delete
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="fav" autocomplete="off" checked> Add/Edit
+        </label>
+    </div>  
+    <div class="row mt-4">
+        <div class="col-sm-10" >
+            <p class="fw-bold text-danger text-center" id="name">
+
+            </p>
+        </div>
+    </div>
+    <div class="row mb-4 border-bottom">
+        <div class="col-sm-6">
+            Phone Number:
+        </div>
+        <div class="col-sm-6" id="phonenumber">
+        </div>
+    </div>
+    <form id="submitter" action="/submit" method="post">
+        <!-- Rating Dropdown -->
+        <div class="mb-3">
+            <label for="rating" class="form-label">Rating</label>
+            <select class="form-select" id="rating" name="rating" required>
+                <option value="" disabled selected>Choose a rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <!-- Notes Text Area -->
+        <div class="mb-3">
+            <label for="notes" class="form-label">Notes</label>
+            <textarea class="form-control" id="notes" name="notes" rows="5" placeholder="Enter your notes here..." required></textarea>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Add or Update</button>
+    </form>
+
+    
+</div>
+
+
